@@ -1,0 +1,7 @@
+apiVersion: composition.krateo.io/v0-1-0
+kind: TomcatApp
+metadata:
+  name: my-tomcat-instance
+  namespace: krateo-system
+spec:
+  replicaCount: 1
