@@ -1,0 +1,38 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Tomcat Values",
+  "type": "object",
+  "properties": {
+    "replicaCount": {
+      "type": "integer",
+      "description": "Number of Tomcat replicas.",
+      "default": 1
+    },
+    "image": {
+      "type": "object",
+      "properties": {
+        "repository": {
+          "type": "string",
+          "description": "Tomcat image repository."
+        },
+        "tag": {
+          "type": "string",
+          "description": "Tomcat image tag."
+        }
+      }
+    },
+    "service": {
+      "type": "object",
+      "properties": {
+        "port": {
+          "type": "integer",
+          "description": "Service port."
+        },
+        "targetPort": {
+          "type": "integer",
+          "description": "Container target port."
+        }
+      }
+    }
+  }
+}

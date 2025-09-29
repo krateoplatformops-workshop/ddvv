@@ -1,0 +1,9 @@
+apiVersion: core.krateo.io/v1alpha1
+kind: CompositionDefinition
+metadata:
+  name: tomcat-app
+  namespace: krateo-system
+spec:
+  chart:
+    url: oci://ghcr.io/krateoplatformops-workshop/ddvv/tomcat
+    version: "0.1.0"
